@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>The Wedding - Masrudin & Ihwanul Husnani</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ======================================================
+       SECTION 0 — COVER / HERO
+  ====================================================== -->
+    <section id="cover" class="section section--cover">
+      <div class="floral floral--tl" aria-hidden="true"></div>
+      <div class="floral floral--tr" aria-hidden="true"></div>
+      <div class="floral floral--bl" aria-hidden="true"></div>
+      <div class="floral floral--br" aria-hidden="true"></div>
+
+      <div class="cover__inner">
+        <p class="cover__label">The beginning of forever</p>
+
+        <h1 class="cover__title">THE WEDDING</h1>
+
+        <div class="cover__divider" aria-hidden="true">
+          <span class="cover__divider-line"></span>
+          <span class="cover__divider-icon">♡</span>
+          <span class="cover__divider-line"></span>
+        </div>
+
+        <!-- Foto utama -->
+        <div class="cover__photo">
+          <img
+            src="assets/foto_utama.jpeg"
+            alt="Foto Mempelai"
+            class="cover__photo-img"
+            onerror="
+              this.style.display = 'none';
+              this.nextElementSibling.style.display = 'flex';
+            "
+          />
+
+          <div class="cover__photo-placeholder" style="display: none">
+            <span>📷</span>
+            <p>Foto Mempelai</p>
+          </div>
+        </div>
+
+        <h2 class="cover__names">
+          <span class="cover__name">Masrudin</span>
+          <span class="cover__names-amp">&amp;</span>
+          <span class="cover__name">Ihwanul Husnani</span>
+        </h2>
+
+        <div class="cover__divider" aria-hidden="true">
+          <span class="cover__divider-line"></span>
+          <span class="cover__divider-icon">❧</span>
+          <span class="cover__divider-line"></span>
+        </div>
+
+        <p class="cover__date">Minggu, 22 November 2026</p>
+
+        <!-- Tombol buka undangan -->
+        <button
+          class="btn btn--open"
+          id="btnOpen"
+          type="button"
+          aria-expanded="false"
+        >
+          Buka Undangan
+          <span class="btn__arrow">↓</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ======================================================
+       KONTEN UNDANGAN
+  ====================================================== -->
+    <main id="invitation" class="invitation" aria-hidden="true">
+      <!-- ==================================================
+         SECTION 1 — PEMBUKA
+    ================================================== -->
+      <section id="opening" class="section section--opening">
+        <div class="floral floral--tl" aria-hidden="true"></div>
+        <div class="floral floral--br" aria-hidden="true"></div>
+
+        <div class="section__inner">
+          <p class="opening__bismillah">
+            بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
+          </p>
+
+          <div class="section__divider" aria-hidden="true">
+            <span class="section__divider-line"></span>
+            <span class="section__divider-icon">✦</span>
+            <span class="section__divider-line"></span>
+          </div>
+
+          <p class="opening__verse">
+            "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
+            pasangan-pasangan untukmu dari jenismu sendiri, agar kamu merasa
+            tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan
+            sayang."
+          </p>
+
+          <p class="opening__verse-ref">— QS. Ar-Rum: 21 —</p>
+
+          <p class="opening__intro">
+            Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta'ala, kami
+            mengundang Bapak/Ibu/Saudara/i untuk hadir dalam acara pernikahan
+            kami.
+          </p>
+        </div>
+      </section>
+
+      <!-- ==================================================
+         SECTION 2 — PROFIL MEMPELAI
+    ================================================== -->
+      <section id="couple" class="section section--couple">
+        <div class="section__inner">
+          <p class="section__eyebrow">Mempelai</p>
+          <h2 class="section__title">Dua Hati, Satu Tujuan</h2>
+
+          <div class="couple__grid">
+            <!-- Mempelai Pria -->
+            <article class="couple__card">
+              <div class="couple__photo-wrap">
+                <img
+                  src="assets/mempelai%20pria.jpeg"
+                  alt="Foto Mempelai Pria"
+                  class="couple__photo"
+                  onerror="this.style.display = 'none'"
+                />
+              </div>
+
+              <div class="couple__badge" aria-label="Mempelai Pria">♙</div>
+
+              <h3 class="couple__fullname">Masrudin</h3>
+
+              <p class="couple__nickname">"Masrudin"</p>
+
+              <p class="couple__parents">
+                Putra pertama dari<br />
+                Bapak Sundrati &amp; Ibu Sadinep
+              </p>
+            </article>
+
+            <div class="couple__ampersand" aria-hidden="true">&amp;</div>
+
+            <!-- Mempelai Wanita -->
+            <article class="couple__card">
+              <div class="couple__photo-wrap">
+                <img
+                  src="assets/mempelai%20wanita.jpeg"
+                  alt="Foto Mempelai Wanita"
+                  class="couple__photo"
+                  onerror="this.style.display = 'none'"
+                />
+              </div>
+
+              <div class="couple__badge" aria-label="Mempelai Wanita">♛</div>
+
+              <h3 class="couple__fullname">Ihwanul Husnani</h3>
+
+              <p class="couple__nickname">"Ihwa"</p>
+
+              <p class="couple__parents">
+                Putri pertama dari<br />
+                Bapak Mahdiana &amp; Ibu Mariani
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================
+         SECTION 3 — DETAIL ACARA
+    ================================================== -->
+      <section id="events" class="section section--events">
+        <div class="floral floral--tl" aria-hidden="true"></div>
+        <div class="floral floral--br" aria-hidden="true"></div>
+
+        <div class="section__inner">
+          <p class="section__eyebrow">Acara</p>
+          <h2 class="section__title">Rangkaian Acara</h2>
+
+          <div class="events__grid">
+            <!-- Akad Nikah -->
+            <article class="event__card">
+              <div class="event__icon" aria-hidden="true">🕌</div>
+
+              <h3 class="event__name">Akad Nikah</h3>
+
+              <div class="event__divider"></div>
+
+              <p class="event__day">Minggu</p>
+              <p class="event__date">22 November 2026</p>
+              <p class="event__time">10.00 – 13.00 WITA</p>
+              <p class="event__address">
+                Dusun Sangkukun, Desa Segara Katon, Lombok Utara
+              </p>
+
+              <a href="#map" class="btn btn--outline btn--sm event__map-btn">
+                📍 Lihat Peta
+              </a>
+            </article>
+
+            <!-- Resepsi -->
+            <article class="event__card">
+              <div class="event__icon" aria-hidden="true">🌸</div>
+
+              <h3 class="event__name">Resepsi</h3>
+
+              <div class="event__divider"></div>
+
+              <p class="event__day">Minggu</p>
+              <p class="event__date">22 November 2026</p>
+              <p class="event__time">13.00 – SELESAI</p>
+              <p class="event__address">
+                Dusun Sangkukun, Desa Segara Katon, Lombok Utara
+              </p>
+
+              <a href="#map" class="btn btn--outline btn--sm event__map-btn">
+                📍 Lihat Peta
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================
+         SECTION 4 — COUNTDOWN
+    ================================================== -->
+      <section id="countdown" class="section section--countdown">
+        <div class="section__inner">
+          <p class="section__eyebrow">Menghitung Hari</p>
+          <h2 class="section__title">Momen Bahagia Kami</h2>
+
+          <div class="countdown__timer" id="countdownTimer">
+            <div class="countdown__unit">
+              <span class="countdown__number" id="cdDays">00</span>
+              <span class="countdown__label">Hari</span>
+            </div>
+
+            <span class="countdown__sep">:</span>
+
+            <div class="countdown__unit">
+              <span class="countdown__number" id="cdHours">00</span>
+              <span class="countdown__label">Jam</span>
+            </div>
+
+            <span class="countdown__sep">:</span>
+
+            <div class="countdown__unit">
+              <span class="countdown__number" id="cdMinutes">00</span>
+              <span class="countdown__label">Menit</span>
+            </div>
+
+            <span class="countdown__sep">:</span>
+
+            <div class="countdown__unit">
+              <span class="countdown__number" id="cdSeconds">00</span>
+              <span class="countdown__label">Detik</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================
+         SECTION 5 — LOKASI / GOOGLE MAPS
+    ================================================== -->
+      <section class="section section--map" id="map">
+        <div class="section__inner">
+          <p class="section__subtitle">Lokasi Acara</p>
+          <h2 class="section__title">Petunjuk Lokasi</h2>
+
+          <p class="map__description">
+            Kami mengundang Anda untuk hadir dan berbagi kebahagiaan bersama
+            kami.
+          </p>
+
+          <div class="map__image-wrap">
+            <img
+              src="assets/Lokasi.jpeg"
+              alt="Peta lokasi acara pernikahan"
+              class="map__image"
+            />
+          </div>
+
+          <a
+            href="https://www.google.com/maps/dir/?api=1&destination=-8.321003%2C116.219448"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn--primary"
+          >
+            Lihat Lokasi di Google Maps
+          </a>
+        </div>
+      </section>
+      <!-- ==================================================
+         SECTION 6 — UCAPAN & DOA
+    ================================================== -->
+      <section id="wishes" class="section section--wishes">
+        <div class="floral floral--tl" aria-hidden="true"></div>
+        <div class="floral floral--br" aria-hidden="true"></div>
+
+        <div class="section__inner">
+          <p class="section__eyebrow">Ucapan &amp; Doa</p>
+
+          <h2 class="section__title">
+            Kirim Ucapan &amp; Konfirmasi Kehadiran
+          </h2>
+
+          <!-- Form Ucapan -->
+          <form class="wishes__form" id="wishesForm" novalidate>
+            <div class="form__group">
+              <label class="form__label" for="guestName"> Nama </label>
+
+              <input
+                type="text"
+                id="guestName"
+                name="name"
+                class="form__input"
+                placeholder="Nama lengkap Anda"
+                required
+              />
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="guestAttend"> Kehadiran </label>
+
+              <select
+                id="guestAttend"
+                name="attend"
+                class="form__select"
+                required
+              >
+                <option value="" disabled selected>— Pilih konfirmasi —</option>
+
+                <option value="hadir">✅ Saya akan hadir</option>
+
+                <option value="tidak">❌ Mohon maaf, tidak bisa hadir</option>
+
+                <option value="mungkin">🤔 Mungkin hadir</option>
+              </select>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="guestMessage">
+                Ucapan &amp; Doa
+              </label>
+
+              <textarea
+                id="guestMessage"
+                name="message"
+                class="form__textarea"
+                rows="4"
+                placeholder="Tuliskan ucapan dan doa terbaik untuk mempelai…"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full">
+              💌 Kirim Ucapan
+            </button>
+          </form>
+
+          <!-- Daftar Ucapan -->
+          <div class="wishes__list" id="wishesList">
+            <div class="wishes__empty">
+              <p>Jadilah yang pertama mengirim ucapan 🌸</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================
+         SECTION 7 — PENUTUP
+    ================================================== -->
+      <section id="closing" class="section section--closing">
+        <div class="floral floral--tl" aria-hidden="true"></div>
+        <div class="floral floral--tr" aria-hidden="true"></div>
+        <div class="floral floral--bl" aria-hidden="true"></div>
+        <div class="floral floral--br" aria-hidden="true"></div>
+
+        <div class="section__inner">
+          <p class="closing__label">Terima Kasih</p>
+
+          <h2 class="closing__title">Masrudin &amp; Ihwanul Husnani</h2>
+
+          <div class="section__divider" aria-hidden="true">
+            <span class="section__divider-line"></span>
+            <span class="section__divider-icon">♡</span>
+            <span class="section__divider-line"></span>
+          </div>
+
+          <p class="closing__message">
+            Merupakan suatu kebahagiaan dan kehormatan bagi kami apabila
+            Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu kepada
+            kami.
+          </p>
+
+          <p class="closing__signature">
+            Hormat kami,<br />
+            <strong>Keluarga Besar Mempelai</strong>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- ======================================================
+       AUDIO / BACKGROUND MUSIC
+  ====================================================== -->
+
+    <audio id="bgMusic" loop preload="auto">
+      <source src="assets/audio/Wedding Nasheed.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- Tombol musik -->
+    <button
+      class="music-btn"
+      id="musicToggle"
+      type="button"
+      aria-label="Putar musik"
+      title="Putar musik"
+      hidden
+    >
+      🎵
+    </button>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+  </body>
+</html>
